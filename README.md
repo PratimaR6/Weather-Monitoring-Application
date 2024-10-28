@@ -68,3 +68,68 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Weather Monitoring Application - Frontend
+
+## Project Overview
+The frontend of the Weather Monitoring Application is built using React. It provides a user-friendly interface to display real-time weather data, daily summaries, and alerts based on user-defined temperature thresholds. The frontend communicates with the backend API to fetch and display data.
+
+## Technologies Used
+- **React**
+- **Axios** (for API requests)
+- **Material-UI** (for UI components)
+
+## Installation
+
+### Prerequisites
+- **Node.js**
+
+### Clone the Repository
+
+git clone https://github.com/PratimaR6/Weather-Monitoring-Application.git
+cd Weather-Monitoring-Application
+Frontend Setup
+Navigate to the Frontend Directory:
+
+
+cd frontend
+Install Dependencies:
+
+
+npm install
+Create a .env File: Set the backend URL:
+
+plaintext
+
+REACT_APP_BACKEND_URL=http://localhost:5000
+Run the Frontend Application:
+
+
+npm start
+Usage
+The application will be accessible at http://localhost:3000.
+Users can view real-time weather data, daily summaries, and receive alerts based on temperature thresholds.
+Features
+Real-time weather data retrieval from the OpenWeatherMap API.
+Daily weather summaries with average, maximum, and minimum temperatures.
+Alerts for temperature thresholds.
+Responsive design and user-friendly interface.
+API Integration
+The frontend interacts with the backend API to fetch weather data and manage alerts. Ensure the backend is running to successfully connect to the API.
+
+API Endpoints
+GET /weather: Retrieve weather data for specified coordinates.
+POST /alerts: Set alerts based on user-defined temperature thresholds.
+Styling
+The application uses Material-UI for a modern and responsive design. You can customize styles based on your preferences by modifying the components.
+
+Testing
+To test the frontend:
+
+Ensure your backend server is running and connected to the MySQL database.
+Verify the functionality by checking data retrieval and alert features.
+Future Enhancements
+User authentication for personalized settings.
+Search functionality for custom locations.
+Historical data visualizations using charts.
+Improved UI/UX with additional design libraries.
